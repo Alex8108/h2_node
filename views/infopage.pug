@@ -1,0 +1,114 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title
+      | Водородная очистка двигателя и катализатора в Нижнем Новгороде, раскоксовка двигателя
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,200&subset=latin,Cyrillic' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='css/normalize.css')
+    link(rel='stylesheet' href='css/custom.css')
+    link(rel='stylesheet' href='css/adapt.css')
+    link(rel='icon' type='image/png' href='/favicon/favicon-16x16.png' sizes='16x16')
+    link(rel='icon' type='image/png' href='/favicon/favicon-32x32.png' sizes='32x32')
+    link(rel='icon' type='image/png' href='/favicon/favicon-96x96.png' sizes='96x96')
+    link(rel='icon' type='image/png' href='/favicon/favicon-120x120.png' sizes='120x120')
+    link(rel='apple-touch-icon' sizes='57x57' href='/favicon/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon' sizes='60x60' href='/favicon/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon' sizes='72x72' href='/favicon/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon' sizes='76x76' href='/favicon/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon' sizes='114x114' href='/favicon/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon' sizes='120x120' href='/favicon/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon' sizes='144x144' href='/favicon/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon' sizes='152x152' href='/favicon/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon-180x180.png')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-36x36.png' sizes='36x36')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-48x48.png' sizes='48x48')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-72x72.png' sizes='72x72')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-96x96.png' sizes='96x96')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-144x144.png' sizes='144x144')
+    link(rel='icon' type='image/png' href='/favicon/android-chrome-192x192.png' sizes='192x192')
+    meta(name='msapplication-TileImage' content='/favicon/mstile-70x70.png')
+    meta(name='msapplication-TileImage' content='/favicon/mstile-144x144.png')
+    meta(name='msapplication-TileImage' content='/favicon/mstile-150x150.png')
+    meta(name='msapplication-TileImage' content='/favicon/mstile-310x150.png')
+    meta(name='msapplication-TileImage' content='/favicon/mstile-310x310.png')
+    meta(name='msapplication-TileColor' content='#6666ff')
+    meta(name='theme-color' content='#6666ff')
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-BPFEK8VZJZ')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-BPFEK8VZJZ');
+  body
+    // Yandex.Metrika counter
+    script.
+      (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(73374400, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+      });
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/73374400' style='position:absolute; left:-9999px;' alt='')
+    // /Yandex.Metrika counter
+    div
+      header
+        nav
+          .ci-telephone
+            img(src='imgs/call.png' alt='')
+            div
+              a(href='tel:+79200044888') +7 920 00-44-888
+              a(href='tel:+79063577357') +7 906 357-73-57
+          .ci-soc-network
+            a(href='https://www.instagram.com/h2engine_nn' target='_blank')
+              img(src='imgs/inst_logo.png' alt='')
+            a(href='https://vk.com/h2engine_nn' target='_blank')
+              img(src='imgs/vk_logo.png' alt='')
+          .nav-container
+            p Меню
+            div
+              span#firstlinemobmenu
+              span
+              span
+            ul
+              li
+                a(href='/') Главная
+              li
+                a(href='#') Услуги
+                ul
+                  li
+                    a(href='/engineclean') Водородная очистка
+                  li
+                    a(href='/katalizatorclean') Очистка катализатора
+              li
+                a(href='#price-block-ID') Цены
+              li
+                a(href='/contacts') Контакты
+              li
+                a(href='/about') О нас
+      h1.infopage-header #{infopage_header_text}
+      p.infopage-text #{infopage_text}
+      pre #{error.stack}
+      p.tohomepage
+        a.button(href='/') На главную
+    a#popup__toggle(href='/contacts#callbackformID')
+      .circlephone(style='transform-origin: center;')
+      .circle-fill(style='transform-origin: center;')
+      .img-circle(style='transform-origin: center;')
+        span
+          | Заказать
+          br
+          | звонок
+        .img-circleblock(style='transform-origin: center;')
+    footer
+      | © 2021 h2engine52.ru
